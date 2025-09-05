@@ -1,0 +1,39 @@
+POST http://localhost:8000/api/login/
+Content-Type: application/json
+
+{
+  "email": "adriensani237@gmail.com",
+
+  "password": "newpassword123"
+}
+
+###
+
+GET http://localhost:8000/api/profile/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzNjQyLCJpYXQiOjE3NTYzMjMwNDIsImp0aSI6IjFjZjU5NzQ0NTEyYzQxMDQ4ZGIxNTA0OWNkMTIwYzg4IiwidXNlcl9pZCI6IjQifQ.xX92_lVwQFamd31jLbEa3vkB96pzZn44cZ0RJYYeCBo
+
+###
+POST http://localhost:8000/api/password-reset/
+Content-Type: application/json
+
+{
+  "email": "adriensani237@gmail.com"
+}
+
+###
+GET http://localhost:8000/api/password-reset-confirm/NA/cvmofg-a461bbafdbe849a009292b8f21106a46/
+Content-Type: application/json
+
+
+###
+PATCH http://localhost:8000/api/set-new-confirm/
+Content-Type: application/json
+
+{
+  "password": "newpassword123",
+  "confirm_password": "newpassword123",
+      "uidb64": "NA",
+    "token": "cvmofg-a461bbafdbe849a009292b8f21106a46"
+
+}
