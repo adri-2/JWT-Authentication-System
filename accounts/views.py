@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from rest_framework.generics import GenericAPIView
+from rest_framework.views import APIView
 from .serializers import UserRegisterSerializer, UserLoginSerializer,SetNewPasswordSerializer,PasswordResetRequestSerializer,LogoutSerializer
 from rest_framework.response import Response
 from rest_framework import status
@@ -30,7 +31,7 @@ class RegisterUserView(GenericAPIView):
         return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
 
 
-class VerifyUserView(GenericAPIView):
+class VerifyUserView(APIView):
     def post(self,request):
         otpcode=request.data.get('otp')
         try:
