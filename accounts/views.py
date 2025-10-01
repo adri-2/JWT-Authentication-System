@@ -61,7 +61,7 @@ class LoginUserView(GenericAPIView):
 
 class TestAuthenticationView(GenericAPIView):
     
-    permission_classes =[IsAdminUser]
+    permission_classes =[IsAuthenticated]
 
     def get(self,request):
         data={
@@ -106,4 +106,4 @@ class LogoutUserView(GenericAPIView):
         serializer=self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        return Response({'message':'logout successful'},status=status.HTTP_204_NO_CONTENT)
+        return Response({'message':'logout successful'},status=status.HTTP_200_OK)

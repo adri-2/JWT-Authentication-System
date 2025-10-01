@@ -11,8 +11,7 @@ Content-Type: application/json
 
 GET http://localhost:8000/api/profile/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MzIzNjQyLCJpYXQiOjE3NTYzMjMwNDIsImp0aSI6IjFjZjU5NzQ0NTEyYzQxMDQ4ZGIxNTA0OWNkMTIwYzg4IiwidXNlcl9pZCI6IjQifQ.xX92_lVwQFamd31jLbEa3vkB96pzZn44cZ0RJYYeCBo
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4MjE2MzU5LCJpYXQiOjE3NTgyMTU3NTksImp0aSI6IjIzYWI0ZmZmNWI4ODQwZjQ5NTQzMmZhNDMzOTJiMjVjIiwidXNlcl9pZCI6IjQifQ.ikWv-vjbnLWbmbDkIXf9pidfB_JIblsQzKHrNElAlWI
 ###
 POST http://localhost:8000/api/password-reset/
 Content-Type: application/json
